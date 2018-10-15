@@ -1,0 +1,54 @@
+<div id="parking">
+  <h1>
+  Parkeo aquí.
+  </h1>
+  <p>
+  Choose a lot.
+  <select v-model="selected" v-on:change="sendSelected(selected)" required>
+    <option disabled value=''> Choose a Lot. </option>
+    <option value='short'> Short. </option>
+    <option value='economic'>Economic </option>
+    <option value='standard'>Standard </option>
+    <option value='long'>Long </option>
+    <option value='night'> Night</option>
+  </select>
+  </p>
+    <p>
+      <div class="card">
+        <div class="row">
+         tiempo total en:
+	<br />
+	{{ dateTime / 3600 / 1000 }} horas |
+         {{ dateTime / 60 / 1000 }} minutos |
+         {{ dateTime }} segundos.
+	<br />
+         exedido {{ (dateTime % 3600000) / 60 /1000 }} min
+	<br />
+          </span>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div class="card">
+        <button @click="calculateCost()" type="button" class="btn btn-default" > Calculate </button>
+        Total:  {{ calculatedCost }} $bs.
+      </div>
+    </p>
+      <div class="card">
+        <div class="row">
+	<br />
+         costo: {{ costo }}
+          </span>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div class="card">
+        <div class="row">
+         {{ costoRate }} $bs.
+          </span>
+        </div>
+      </div>
+    </p>
+  <br/>
+</div>

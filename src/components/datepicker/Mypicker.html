@@ -1,0 +1,60 @@
+  <div>
+    <p>
+      <div class="card">
+        <!-- for Vue 2.0 -->
+        <div class="row">
+          <span>Now：</span>
+          <date-picker :date="date" :option="timeoption" :limit="limit"></date-picker>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div class="card">
+        <div class="row">
+          <span>Entry：</span>
+          <date-picker :date="startTime" :option="timeoption" :limit="limit"  v-on:change="enviarNowDatetime(); sendStartDatetime(startTime)">
+          {{ date.time }}
+          {{ datetimestamp }}
+          {{ startTimestamp }}
+          </date-picker>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div class="card">
+        <div class="row">
+          <span>Leaving：</span>
+            <date-picker :date="endtime" :option="timeoption" :limit="limit" v-on:change="enviarEndDatetime(endtime)"></date-picker>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div class="card">
+        <div class="row">
+          <span>
+          COST $:
+          </span>
+          <span>
+          {{ cost }}
+          </span>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div class="card">
+        <div class="row">
+          <span>
+           Tiempo:
+          </span>
+          <span>
+          {{ date.time }}
+          <br/>
+          {{ startTime.time }}
+          <br/>
+          {{ endtime.time }}
+          </span>
+        </div>
+      </div>
+    </p>
+  </div>
+
