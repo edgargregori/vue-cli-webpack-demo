@@ -35,6 +35,7 @@ Instalacion alternativa: https://scotch.io/tutorials/build-a-single-page-time-tr
 
 -----------------************  Casos de prueba parking-calc ***********----------------
 https://docs.google.com/document/d/1SzNt3gdzfAMu2Zr5WIDxHMlsmZpQ7xF7CLlYz8nkSAs/edit
+Nota: esta app-demo no esta acabada, pero si corre como demo para utilizar componentes vue para separar mas la logica del programa.
 -----------------************  fin Casos de prueba parking-calc ***********----------------
 
 -----*********** Casos uso parkeo de automoviles *********-------
